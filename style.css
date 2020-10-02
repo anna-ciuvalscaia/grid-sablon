@@ -1,0 +1,48 @@
+body {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    text-align: center;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #111;
+    display: grid;
+    grid-template-areas: 
+    "brand navbar navbar"
+    "content content sidebar"
+    "footer footer footer"
+    ;
+}
+
+main a {
+    grid-area: brand;
+    background-color: teal;
+
+}
+main nav {
+    grid-area: navbar;
+    background-color: green;
+    height: 50px;
+}
+main section {
+    grid-area: content;
+    background-color: darkgreen;
+    height: 600px;
+}
+main aside {
+    grid-area: sidebar;
+    background-color: olivedrab;
+}
+main footer {
+    grid-area: footer;
+    background-color: olive;
+    height: 70px;
+}
